@@ -3,6 +3,7 @@
     --font: rgb(237, 234, 234);
     --br: 8px;
     --ch: calc(100dvh - 166px);
+    --blue: rgb(7, 146, 215);
 }
 
 @font-face {
@@ -43,7 +44,8 @@ a {
     text-decoration: none;
 }
 
-section, div{
+section,
+div {
     box-sizing: border-box;
     margin: 0;
 }
