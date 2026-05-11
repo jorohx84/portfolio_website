@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/stack.css">
+    <script src="js/data.js"></script>
     <script src="js/animations.js"></script>
+    <script src="js/rendering.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
-<body onload="animateTitle()">
-    <!-- <header w3-include-html="/html/header.html"></header> -->
+<body onload="animateTitle(); loadSection('about')">
+
     <div class="mainCont">
         <img class="titlePic" src="./assets/img/protrait_small.webp" alt="">
         <div class="title">
@@ -22,18 +25,12 @@
                 <h2>Fullstack Entwickler</h2>
             </div>
             <div class="content" id="content">
-                <div class="navbar">
-                    <nav>
-                        <a href="">About me</a>
-                        <a href="">TechStack</a>
-                        <a href="">Portfolio</a>
-                        <a href="">Kontakt</a>
-                    </nav>
+                <header w3-include-html="/html/navbar.html"></header>
 
-                    <!-- <div class="icons">
-                        <img src="./assets/icons/mail.svg" alt="">
-                        <img src="./assets/icons/phone.svg" alt="">
-                    </div> -->
+
+                <div>
+                    <div class="section" id="about" w3-include-html="/html/aboutme.html"></div>
+                    <div class="section" id="stack" w3-include-html="/html/stack.html"></div>
                 </div>
 
             </div>

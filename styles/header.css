@@ -1,6 +1,23 @@
-.headerInner {
+.navbar {
     width: 100%;
+    height: 60px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.153);
+    border-radius: var(--br);
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    gap: 24px;
+
+
+
 }

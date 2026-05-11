@@ -7,6 +7,6 @@ function animateTitle() {
     }, 1000);
     setTimeout(() => {
         content.classList.add('show');
-    }, 6000);
+    }, 5000);
 
 }
