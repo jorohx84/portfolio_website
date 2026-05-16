@@ -7,8 +7,10 @@
     <title>Johannes Roth - Fullstack Developer</title>
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/stack.css">
+    <link rel="stylesheet" href="./styles/aboutme.css">
     <script src="js/data.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/rendering.js"></script>
@@ -16,10 +18,11 @@
 </head>
 
 <body onload="animateTitle(); loadSection('about')">
-
+    <header class="header" w3-include-html="/html/header.html"></header>
     <div class="mainCont">
+
         <img class="titlePic" src="./assets/img/protrait_small.webp" alt="">
-        <div class="title">
+        <div class="dynamicContent">
             <div class="titleText" id="title">
                 <h1>Johannes Roth</h1>
                 <h2>Fullstack Entwickler</h2>
@@ -28,14 +31,16 @@
                 <header w3-include-html="/html/navbar.html"></header>
 
 
-                <div>
-                    <div class="section" id="about" w3-include-html="/html/aboutme.html"></div>
-                    <div class="section" id="stack" w3-include-html="/html/stack.html"></div>
-                </div>
+
+                <div class="section" id="about" w3-include-html="/html/aboutme.html"></div>
+                <div class="section" id="stack" w3-include-html="/html/stack.html"></div>
+
 
             </div>
         </div>
 
+        <!-- <div class="sectionResp" w3-include-html="/html/aboutme.html"></div>
+        <div class="sectionResp" w3-include-html="/html/stack.html"></div> -->
 
     </div>
     <div class="social">
@@ -55,9 +60,11 @@
             <img src="./assets/icons/social/phone.svg" alt="">
         </div>
 
-     
+
     </div>
-    <script>w3.includeHTML();</script>
+    <script>w3.includeHTML(() => {
+            renderSkillIcons();
+        });</script>
 </body>
 
 </html>

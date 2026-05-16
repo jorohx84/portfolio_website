@@ -4,6 +4,7 @@
     --br: 8px;
     --ch: calc(100dvh - 166px);
     --blue: rgb(7, 146, 215);
+    --sdw: 0px 0px 10px 6px var(--blue);
 }
 
 @font-face {
@@ -16,6 +17,7 @@
 
 body {
     width: 100%;
+    max-width: 2560px;
     height: 100dvh;
     color: var(--font);
     font-family: 'Inter';
@@ -23,20 +25,22 @@ body {
     flex-direction: column;
     overflow: hidden;
     margin: 0;
-    padding: 0px 32px;
+   
     box-sizing: border-box;
     /* background-color: var(--bg); */
     background: linear-gradient(15deg, black 40%, rgb(7, 146, 215));
 }
 
 h1 {
-    font-size: 112px;
+    font-size: clamp(56px, 5vw, 112px);
     margin: 0;
+    white-space: nowrap;
 }
 
 h2 {
-    font-size: 72px;
+    font-size: clamp(36px, 3vw, 72px);
     margin: 0;
+    white-space: nowrap;
 }
 
 a {
@@ -44,8 +48,41 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+}
+
 section,
 div {
     box-sizing: border-box;
     margin: 0;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    /* background-color: var(--blue); */
+    background-color: transparent;
+    border: none;
+    /* border: solid 1px var(--blue); */
+    box-shadow: 0px 0px 6px 0px var(--blue);
+    border-radius: var(--br);
+    color: var(--font);
+    transition: border 0.3s ease-in-out, box-shadow 0.6s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+
+    box-shadow: var(--sdw);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@media(max-width:1024px) {
+    
 }

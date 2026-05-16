@@ -1,12 +1,13 @@
 function animateTitle() {
+    if (window.innerWidth <= 1024) return
     const title = document.getElementById('title');
     const content = document.getElementById('content');
 
     setTimeout(() => {
         title.classList.add('slide')
-    }, 1000);
+    }, 500);
     setTimeout(() => {
         content.classList.add('show');
-    }, 5000);
+    }, 4000);
 
 }
