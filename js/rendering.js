@@ -34,9 +34,9 @@ function loadSection(section) {
     const linkRef = document.getElementById(linkID);
     secRef.classList.add('visible');
     linkRef.classList.add('activated');
-    if (section === 'stack') {
-        renderSkillIcons();
-    }
+    // if (section === 'stack') {
+    //     // renderSkillIcons();
+    // }
 
 }
 

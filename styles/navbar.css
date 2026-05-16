@@ -52,3 +52,12 @@ nav {
 
     
 }
+
+@media(max-width:1180px) {
+    nav {
+        justify-content: center;
+
+    }
+
+    
+}

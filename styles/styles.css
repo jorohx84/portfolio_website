@@ -62,7 +62,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: clamp(96px, 5vw, 116px);
+    top: clamp(96px, 6vw, 116px);
     left: 0;
     opacity: 0;
 }
@@ -141,7 +141,31 @@
     width: 24px;
 }
 
+.socialResp {
+   
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
 
+.socialResp div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 100px;
+    cursor: pointer;
+    /* box-shadow: 0px 0px 10px 6px var(--blue); */
+}
+
+.socialResp div img {
+    width: 24px;
+}
+
+.socialResp div:hover {
+    box-shadow: 0px 0px 10px 6px white;
+}
 
 @keyframes title {
     0% {

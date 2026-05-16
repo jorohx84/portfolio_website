@@ -17,7 +17,7 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
-<body onload="animateTitle(); loadSection('about')">
+<body onload="animateTitle(); loadSection('about')" onresize="loadSection('about')">
     <header class="header" w3-include-html="/html/header.html"></header>
     <div class="mainCont">
 
@@ -43,25 +43,28 @@
         <div class="sectionResp" w3-include-html="/html/stack.html"></div> -->
 
     </div>
+    
     <div class="social">
-        <div>
-            <img src="./assets/icons/social/github.svg" alt="">
-        </div>
 
-        <div>
-            <img src="./assets/icons/social/linkedin.svg" alt="">
-        </div>
-
-        <div>
-            <img src="./assets/icons/social/mail2.svg" alt="">
-        </div>
-
-        <div>
-            <img src="./assets/icons/social/phone.svg" alt="">
-        </div>
-
-
+    <div>
+        <img src="./assets/icons/social/mail2.svg" alt="">
     </div>
+
+    <div>
+        <img src="./assets/icons/social/phone.svg" alt="">
+    </div>
+    <div>
+        <img src="./assets/icons/social/github.svg" alt="">
+    </div>
+
+    <div>
+        <img src="./assets/icons/social/linkedin.svg" alt="">
+    </div>
+
+
+
+
+</div>
     <script>w3.includeHTML(() => {
             renderSkillIcons();
         });</script>

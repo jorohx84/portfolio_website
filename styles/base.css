@@ -53,7 +53,7 @@ p {
 }
 
 section,
-div {
+div, header {
     box-sizing: border-box;
     margin: 0;
 }
