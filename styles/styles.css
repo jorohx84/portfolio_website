@@ -58,13 +58,14 @@
 .content {
     width: 100%;
 
-    height: var(--ch);
+    height: calc(100dvh - 126px);
     display: flex;
     flex-direction: column;
     position: absolute;
     top: clamp(96px, 6vw, 116px);
     left: 0;
     opacity: 0;
+
 }
 
 
@@ -91,10 +92,10 @@
     top: 60px;
     left: 0;
     width: 100%;
-    height: var(--ch);
-    padding: 24px;
+    height: calc(100dvh - 166px);
+    /* min-height: fit-content; */
+    padding: 24px 0;
     display: none;
-
     justify-content: center;
     /* align-items: center; */
     /* border-radius: 30px;
@@ -142,11 +143,11 @@
 }
 
 .socialResp {
-   
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
-   
+
 }
 
 .socialResp div {

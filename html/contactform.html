@@ -1,0 +1,51 @@
+<div class="contactform">
+    <div class="inputCont">
+
+        <input class="inputfield required" type="text" name="Name" id="name" placeholder="Name">
+
+        <div class="validation" id="Name"></div>
+    </div>
+    <div class="inputCont">
+
+        <input class="inputfield required" type="email" name="E-Mail" id="email" placeholder="E-Mail">
+
+        <div class="validation" id="E-Mail"></div>
+
+    </div>
+
+    <div class="inputCont">
+
+        <input class="inputfield required" type="tel" name="Telefonnummer" id="phone" placeholder="Telefon">
+
+
+        <div class="validation" id="Telefonnummer"></div>
+    </div>
+
+    <div class="inputCont">
+        <Textarea id="message" class="required" name="Nachricht"
+            placeholder="Beschreiben Sie mir kurz Ihr Anliegen . . ."></Textarea>
+        <div class="validation" id="Nachricht"></div>
+
+    </div>
+
+
+
+
+    <div class="privacyPolicy">
+        <div onclick="changePrivacy('required')" class="checkbox" id="checkbox">
+            <img class="d_none" id="check" src="./assets/icons/check.svg" alt="check_icon">
+        </div>
+        <p>Ich habe die <a class="privacyLink" href="privacypolicy.html">Datenschutzerklärung</a> gelesen und bin damit einverstanden, dass meine angegebenen Daten
+            elektronisch erhoben und gespeichert werden. Sie werden ausschließlich zum Zweck der Bearbeitung und
+            Beantwortung meiner Anfrage verwendet. Mit dem Absenden des Kontaktformulars stimme ich der Verarbeitung
+            meiner Daten zu.
+        </p>
+    </div>
+    <div class="validation" id="privacy-error"></div>
+    <br>
+    <div class="submitBtn">
+        <button onclick="validateInputfields('required')">Nachricht senden</button>
+    </div>
+
+
+</div>

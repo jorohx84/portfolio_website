@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.153);
+    background-color: var(--bbg);
     border-radius: var(--br);
     padding: 0 clamp(16px, 2vw, 32px);
     box-sizing: border-box;

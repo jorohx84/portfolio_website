@@ -3,21 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Johannes Roth - Fullstack Developer</title>
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/stack.css">
     <link rel="stylesheet" href="./styles/aboutme.css">
-    <script src="js/data.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/rendering.js"></script>
+    <link rel="stylesheet" href="./styles/contact.css">
+    <script src="./js/data.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/rendering.js"></script>
+    <script src="./js/sendMessage.js"></script>
+    <script src="./js/validation.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
-<body onload="animateTitle(); loadSection('about')" onresize="loadSection('about')">
+<body onload="animateTitle(); loadSection('about')" onresize="loadSection('contact')">
     <header class="header" w3-include-html="/html/header.html"></header>
     <div class="mainCont">
 
@@ -34,6 +37,7 @@
 
                 <div class="section" id="about" w3-include-html="/html/aboutme.html"></div>
                 <div class="section" id="stack" w3-include-html="/html/stack.html"></div>
+                 <div class="section" id="contact" w3-include-html="/html/contact.html"></div>
 
 
             </div>
